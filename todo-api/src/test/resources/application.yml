@@ -1,0 +1,8 @@
+# Общая конфигурация приложения
+
+# Конфигурация spring
+spring:
+  profiles:
+    active: test
+  config:
+    import: file:src/main/resources/application.yml

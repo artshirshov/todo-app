@@ -35,7 +35,7 @@ class TaskController(private val taskService: TaskService) {
     fun toggleTaskStatus(@PathVariable id: UUID): OperationDto =
         taskService.toggleTaskStatus(id)
 
-            @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")
     fun deleteTask(@PathVariable id: UUID): OperationDto =
         taskService.deleteTask(id)
 }
